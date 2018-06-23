@@ -17,6 +17,8 @@ class App extends React.Component {
 
   placeAddedHandler = placeName => {
     this.props.onAddPlace(placeName);
+    //debugger;
+    console.log('place added');
     // this.setState(prevState => {
     //   return {
     //     places: prevState.places.concat({
