@@ -16,7 +16,7 @@ export default class PlaceInput extends Component {
     if (this.state.placeName.trim() === '') {
       return;
     }
-
+    //event: submit  callback: onPlaceAdded()   passing the value of placeName to the call back
     this.props.onPlaceAdded(this.state.placeName);
   }
 

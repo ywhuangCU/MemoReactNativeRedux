@@ -17,11 +17,11 @@ const placeList = props => {
         //removeClippedSubviews={true}
         style={styles.placeList}
         data={props.places}
-        renderItem={({ item }) => (
+        renderItem={(info) => (
           <ListItem
-            placeName={item.name}
-            image={item.image}
-            onItemPressed={() => props.onPlaceSelected(item.key)}
+            placeName={info.item.name}
+            image={info.item.image}
+            onItemPressed={() => props.onPlaceSelected(info.item.key)}
           />
         )
         }
